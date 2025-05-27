@@ -47,8 +47,6 @@ esptool.py --chip esp32s3 merge_bin -o merged-flash.bin --flash_mode dio --flash
 
 ## 烧录指南
 
-<span style={{color: 'red'}}><strong>烧录前确保电池已经安装！！！！！！！！！！！</strong></span>
-
 1. 下载最新版本的固件文件（.bin）
 2. 下载并安装烧录工具
 3. 将 electronBot 通过 USB 连接到电脑（<span style={{color: 'red'}}><strong>注意，如果 ESP32 是第一次烧录程序，打开开关前需要按住 BOOT 按钮！！！！！！！！</strong></span>）
