@@ -15,7 +15,7 @@ export const ImgWithBaseUrl = ({src, alt, width}) => (
 
 在这里，您可以找到 electronBot 相关的所有程序文件和源代码链接。
 
-<FirmwareFlasher defaultVersion="v2.0.4" />
+<FirmwareFlasher defaultVersion="v2.2.6" />
 
 ## 源代码仓库
 
@@ -31,6 +31,7 @@ export const ImgWithBaseUrl = ({src, alt, width}) => (
 
 | 版本   | 发布日期  | 功能描述                                                                           | 下载链接                             |
 | ------ | --------- | ---------------------------------------------------------------------------------- | ------------------------------------ |
+| v2.2.6 | 2026-6-10 | 优化动作收尾与自适应归位平滑度；修复 UI                                           | [2.2.6](/files/electronBot2.2.6.bin) |
 | v2.0.4 | 2025-11-3 | 更新到小智 2.0                                                                     | [2.0.4](/files/electronBot2.0.4.bin) |
 | v1.1.3 | 2025-6-13 | 新增舵机初始位置 MCP 校准 说“校准头部 10 度/-10 度”                                | [1.1.3](/files/electronBot1.1.3.bin) |
 | v1.1.2 | 2025-6-13 | 1.fix(ota): 修复 OTA 升级崩溃问题 <br/> 2.升级到小智 1.7.4<br/>3.使用 MCP 协议控制 | 1.1.2                                |
