@@ -1,0 +1,16 @@
+{
+  "name": "electronBot ESP32+AI v2.0.4",
+  "version": "2.0.4",
+  "new_install_prompt_erase": true,
+  "builds": [
+    {
+      "chipFamily": "ESP32-S3",
+      "parts": [
+        {
+          "path": "electronBot2.0.4.bin",
+          "offset": 0
+        }
+      ]
+    }
+  ]
+}
