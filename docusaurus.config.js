@@ -33,7 +33,7 @@ const config = {
   // may want to replace "en" with "zh-Hans".
   i18n: {
     defaultLocale: 'zh-Hans',
-    locales: ['zh-Hans', 'en'],
+    locales: ['zh-Hans'],
   },
 
   presets: [
@@ -121,6 +121,12 @@ const config = {
             to: '/docs/usage',
             position: 'left',
             label: '使用说明',
+          },
+
+          {
+            to: '/playground',
+            position: 'left',
+            label: '在线调试',
           },
           {
             href: 'https://github.com/txp666/electronBot-docs',

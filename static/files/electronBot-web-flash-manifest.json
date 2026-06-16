@@ -1,13 +1,13 @@
 {
-  "name": "electronBot ESP32+AI v2.2.6",
-  "version": "2.2.6",
+  "name": "electronBot ESP32+AI v2.2.6-2",
+  "version": "2.2.6-2",
   "new_install_prompt_erase": true,
   "builds": [
     {
       "chipFamily": "ESP32-S3",
       "parts": [
         {
-          "path": "electronBot2.2.6.bin",
+          "path": "electronbot2.2.6-2.bin",
           "offset": 0
         }
       ]

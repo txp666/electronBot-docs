@@ -15,7 +15,7 @@ export const ImgWithBaseUrl = ({src, alt, width}) => (
 
 在这里，您可以找到 electronBot 相关的所有程序文件和源代码链接。
 
-<FirmwareFlasher defaultVersion="v2.2.6" />
+<FirmwareFlasher defaultVersion="v2.2.6-2" />
 
 ## 源代码仓库
 
@@ -27,10 +27,13 @@ export const ImgWithBaseUrl = ({src, alt, width}) => (
 
 ## 固件下载
 
+> **在线调试要求**：WebSocket 在线调试需要 `v2.2.6-2` 及以上固件。旧版本仍可正常语音使用，但不会启动本地 `ws://<IP>:8080/ws` 控制服务。
+
 ### ESP32+AI 版本固件
 
 | 版本   | 发布日期  | 功能描述                                                                           | 下载链接                             |
 | ------ | --------- | ---------------------------------------------------------------------------------- | ------------------------------------ |
+| v2.2.6-2 | 2026-6-16 | 新增 WebSocket 在线调试控制服务；在线调试要求此版本及以上固件                    | [2.2.6-2](/files/electronbot2.2.6-2.bin) |
 | v2.2.6 | 2026-6-10 | 优化动作收尾与自适应归位平滑度；修复 UI                                           | [2.2.6](/files/electronBot2.2.6.bin) |
 | v2.0.4 | 2025-11-3 | 更新到小智 2.0                                                                     | [2.0.4](/files/electronBot2.0.4.bin) |
 | v1.1.3 | 2025-6-13 | 新增舵机初始位置 MCP 校准 说“校准头部 10 度/-10 度”                                | [1.1.3](/files/electronBot1.1.3.bin) |
@@ -54,7 +57,7 @@ export const ImgWithBaseUrl = ({src, alt, width}) => (
 esptool.py --chip esp32s3 merge_bin -o merged-flash.bin --flash_mode dio --flash_size 16MB 0x0 build/bootloader/bootloader.bin 0x100000 build/xiaozhi.bin 0x8000 build/partition_table/partition-table.bin 0xd000 build/ota_data_initial.bin 0x10000 build/srmodels/srmodels.bin
 ```
 
-#### V2（v2.x 固件，如 v2.0.4、v2.2.6）
+#### V2（v2.x 固件，如 v2.0.4、v2.2.6、v2.2.6-2）
 
 ```bash
 esptool.py --chip esp32s3 merge_bin -o merged-flash.bin --flash_mode dio --flash_size 16MB 0x0 build/bootloader/bootloader.bin 0x8000 build/partition_table/partition-table.bin 0xd000 build/ota_data_initial.bin 0x20000 build/xiaozhi.bin 0x800000 build/generated_assets.bin

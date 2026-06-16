@@ -11,6 +11,12 @@ let espWebToolsPromise;
 
 const firmwareOptions = [
   {
+    version: 'v2.2.6-2',
+    date: '2026-6-16',
+    bin: '/files/electronbot2.2.6-2.bin',
+    manifest: '/files/electronbot2.2.6-2-web-flash-manifest.json',
+  },
+  {
     version: 'v2.2.6',
     date: '2026-6-10',
     bin: '/files/electronBot2.2.6.bin',
@@ -61,7 +67,7 @@ function loadEspWebTools() {
   return espWebToolsPromise;
 }
 
-export default function FirmwareFlasher({defaultVersion = 'v2.2.6'}) {
+export default function FirmwareFlasher({defaultVersion = 'v2.2.6-2'}) {
   const {
     i18n: {currentLocale},
   } = useDocusaurusContext();
