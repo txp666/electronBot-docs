@@ -5,7 +5,7 @@ import { OrbitControls } from 'three/examples/jsm/controls/OrbitControls.js';
 import { HOME_POSE, SERVO_KEYS } from './constants';
 
 const MODEL_URL = '/files/models/electronbot.glb';
-const DEFAULT_FACE_TEXTURE_URL = '/files/gifs/staticstate.gif';
+const DEFAULT_FACE_TEXTURE_URL = '/files/gifs/neutral.gif';
 const FACE_DOM_SIZE = 240;
 const deg = (value) => THREE.MathUtils.degToRad(value);
 const lerp = (a, b, t) => a + (b - a) * t;

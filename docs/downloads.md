@@ -15,7 +15,7 @@ export const ImgWithBaseUrl = ({src, alt, width}) => (
 
 在这里，您可以找到 electronBot 相关的所有程序文件和源代码链接。
 
-<FirmwareFlasher defaultVersion="v2.2.6-2" />
+<FirmwareFlasher defaultVersion="v2.3.0" />
 
 ## 源代码仓库
 
@@ -33,6 +33,7 @@ export const ImgWithBaseUrl = ({src, alt, width}) => (
 
 | 版本   | 发布日期  | 功能描述                                                                           | 下载链接                             |
 | ------ | --------- | ---------------------------------------------------------------------------------- | ------------------------------------ |
+| v2.3.0 | 2026-7-16 | 表情新增至 21 个                                                                    | [2.3.0](/files/electronBot2.3.0.bin) |
 | v2.2.6-2 | 2026-6-16 | 新增 WebSocket 在线调试控制服务；在线调试要求此版本及以上固件                    | [2.2.6-2](/files/electronbot2.2.6-2.bin) |
 | v2.2.6 | 2026-6-10 | 优化动作收尾与自适应归位平滑度；修复 UI                                           | [2.2.6](/files/electronBot2.2.6.bin) |
 | v2.0.4 | 2025-11-3 | 更新到小智 2.0                                                                     | [2.0.4](/files/electronBot2.0.4.bin) |
@@ -57,7 +58,7 @@ export const ImgWithBaseUrl = ({src, alt, width}) => (
 esptool.py --chip esp32s3 merge_bin -o merged-flash.bin --flash_mode dio --flash_size 16MB 0x0 build/bootloader/bootloader.bin 0x100000 build/xiaozhi.bin 0x8000 build/partition_table/partition-table.bin 0xd000 build/ota_data_initial.bin 0x10000 build/srmodels/srmodels.bin
 ```
 
-#### V2（v2.x 固件，如 v2.0.4、v2.2.6、v2.2.6-2）
+#### V2（v2.x 固件，如 v2.0.4、v2.2.6-2、v2.3.0）
 
 ```bash
 esptool.py --chip esp32s3 merge_bin -o merged-flash.bin --flash_mode dio --flash_size 16MB 0x0 build/bootloader/bootloader.bin 0x8000 build/partition_table/partition-table.bin 0xd000 build/ota_data_initial.bin 0x20000 build/xiaozhi.bin 0x800000 build/generated_assets.bin

@@ -56,12 +56,27 @@ const COLOR_FIELDS = [
   { key: 'background', label: '背景' },
 ];
 const EXPRESSIONS = [
-  { value: 'staticstate', label: '默认', url: '/files/gifs/staticstate.gif' },
+  { value: 'neutral', label: '平静', url: '/files/gifs/neutral.gif' },
+  { value: 'angry', label: '生气', url: '/files/gifs/angry.gif' },
+  { value: 'confident', label: '自信', url: '/files/gifs/confident.gif' },
+  { value: 'confused', label: '困惑', url: '/files/gifs/confused.gif' },
+  { value: 'cool', label: '酷', url: '/files/gifs/cool.gif' },
+  { value: 'crying', label: '哭泣', url: '/files/gifs/crying.gif' },
+  { value: 'delicious', label: '馋嘴', url: '/files/gifs/delicious.gif' },
+  { value: 'embarrassed', label: '尴尬', url: '/files/gifs/embarrassed.gif' },
+  { value: 'funny', label: '滑稽', url: '/files/gifs/funny.gif' },
   { value: 'happy', label: '开心', url: '/files/gifs/happy.gif' },
+  { value: 'kissy', label: '亲亲', url: '/files/gifs/kissy.gif' },
+  { value: 'laughing', label: '大笑', url: '/files/gifs/laughing.gif' },
+  { value: 'loving', label: '喜爱', url: '/files/gifs/loving.gif' },
+  { value: 'relaxed', label: '放松', url: '/files/gifs/relaxed.gif' },
   { value: 'sad', label: '悲伤', url: '/files/gifs/sad.gif' },
-  { value: 'anger', label: '生气', url: '/files/gifs/anger.gif' },
-  { value: 'scare', label: '害怕', url: '/files/gifs/scare.gif' },
-  { value: 'buxue', label: '不屑', url: '/files/gifs/buxue.gif' },
+  { value: 'shocked', label: '震惊', url: '/files/gifs/shocked.gif' },
+  { value: 'silly', label: '搞怪', url: '/files/gifs/silly.gif' },
+  { value: 'sleepy', label: '困倦', url: '/files/gifs/sleepy.gif' },
+  { value: 'surprised', label: '惊讶', url: '/files/gifs/surprised.gif' },
+  { value: 'thinking', label: '思考', url: '/files/gifs/thinking.gif' },
+  { value: 'winking', label: '眨眼', url: '/files/gifs/winking.gif' },
 ];
 const PARAM_CONFIGS = [
   { k: 'steps', min: 1, max: 10, step: 1 },
@@ -176,7 +191,7 @@ export default function ElectronDebugger({ lang = 'zh' }) {
   const [savedNames, setSavedNames] = useState([]);
   const [tab, setTab] = useState('presets');
   const [simColors, setSimColors] = useState({ ...DEFAULT_SIM_COLORS });
-  const [expression, setExpression] = useState('staticstate');
+  const [expression, setExpression] = useState('neutral');
   const [appearanceOpen, setAppearanceOpen] = useState(true);
   const [shareTitle, setShareTitle] = useState('');
   const [shareAuthor, setShareAuthor] = useState('');
@@ -395,7 +410,7 @@ export default function ElectronDebugger({ lang = 'zh' }) {
 
   const resetAppearance = () => {
     setSimColors({ ...DEFAULT_SIM_COLORS });
-    setExpression('staticstate');
+    setExpression('neutral');
   };
 
   const playFramesLocal = useCallback(async (sourceFrames, shouldLoop = false) => {
