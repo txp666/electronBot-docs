@@ -2,7 +2,7 @@
 
 electronBot 是一个开源的可自行制作的机器人，它有着可爱的外形和丰富的功能，非常适合作为教育工具和个人创客项目。本网站专注于分享基于 ESP32 IDF 开发的 AI 增强版 electronBot 机器人。
 
-![electronBot 机器人](./static/img/electronBot.png)
+![electronBot 机器人](./static/img/electronBot.webp)
 
 ## 什么是 ESP32+AI electronBot 机器人？
 

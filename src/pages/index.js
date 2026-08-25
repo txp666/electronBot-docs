@@ -69,7 +69,7 @@ export default function Home() {
             </div>
             <div className="col col--6">
               <img 
-                src={require('@site/static/img/electronBot.png').default}
+                src={require('@site/static/img/electronBot.webp').default}
                 alt="electronBot机器人" 
                 className={styles.heroImg}
               />

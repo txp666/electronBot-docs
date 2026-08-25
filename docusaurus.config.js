@@ -15,7 +15,7 @@ const config = {
   favicon: 'img/favicon.ico',
 
   // Set the production url of your site here
-  url: 'https://electronBot.tech',
+  url: 'https://electronbot.tech',
   // Set the /<baseUrl>/ pathname under which your site is served
   // For GitHub pages deployment, it is often '/<projectName>/'
   baseUrl: '/',
@@ -74,7 +74,7 @@ const config = {
     /** @type {import('@docusaurus/preset-classic').ThemeConfig} */
     ({
       // Replace with your project's social card
-      image: 'img/electronBot-social-card.jpg',
+      image: 'img/electronBot.webp',
       colorMode: {
         defaultMode: 'light',
         respectPrefersColorScheme: true,

@@ -54,7 +54,7 @@ electronBot 机器人的总成本大约在 300-¥600 之间，具体取决于购
    - [electronBot 基础套件](https://mall.bilibili.com/neul-next/detailuniversal/detail.html?isMerchant=1&page=detailuniversal_detail&saleType=0&itemsId=12453101&loadingShow=1&noTitleBar=1&msource=merchant_share)
 
    <p align="center">
-     <ImgWithBaseUrl src="/img/bmallqr.jpg" alt="PCB1" width="500" />
+     <ImgWithBaseUrl src="/img/bmallqr.webp" alt="PCB1" width="500" />
      <div align="center"><em>图1</em></div>
    </p>
 

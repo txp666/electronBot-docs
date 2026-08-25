@@ -4,7 +4,7 @@ import useDocusaurusContext from '@docusaurus/useDocusaurusContext';
 import styles from './styles.module.css';
 
 const ESP_WEB_TOOLS_SCRIPT =
-  'https://unpkg.com/esp-web-tools@10/dist/web/install-button.js?module';
+  '/vendor/esp-web-tools/10.4.0/install-button.js';
 
 const scriptId = 'esp-web-tools-install-button';
 let espWebToolsPromise;
@@ -42,7 +42,7 @@ const firmwareOptions = [
   },
 ];
 
-function loadEspWebTools() {
+function loadEspWebTools(scriptUrl) {
   if (typeof document === 'undefined') {
     return Promise.resolve();
   }
@@ -59,7 +59,7 @@ function loadEspWebTools() {
         script = document.createElement('script');
         script.id = scriptId;
         script.type = 'module';
-        script.src = ESP_WEB_TOOLS_SCRIPT;
+        script.src = scriptUrl;
         document.head.appendChild(script);
       }
 
@@ -86,6 +86,7 @@ export default function FirmwareFlasher({defaultVersion = 'v2.3.0'}) {
     firmwareOptions[0];
   const manifestUrl = useBaseUrl(selectedFirmware.manifest);
   const downloadUrl = useBaseUrl(selectedFirmware.bin);
+  const espWebToolsScriptUrl = useBaseUrl(ESP_WEB_TOOLS_SCRIPT);
 
   const copy = useMemo(() => {
     if (locale === 'en') {
@@ -152,10 +153,10 @@ export default function FirmwareFlasher({defaultVersion = 'v2.3.0'}) {
       return;
     }
 
-    loadEspWebTools()
+    loadEspWebTools(espWebToolsScriptUrl)
       .then(() => setInstallerState('ready'))
       .catch(() => setInstallerState('error'));
-  }, []);
+  }, [espWebToolsScriptUrl]);
 
   const statusText =
     installerState === 'error'

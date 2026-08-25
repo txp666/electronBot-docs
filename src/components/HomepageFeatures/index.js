@@ -5,7 +5,7 @@ import styles from './styles.module.css';
 const FeatureList = [
   {
     title: '桌面级',
-    imgSrc: require('@site/static/img/electronBot.png').default,
+    imgSrc: require('@site/static/img/electronBot.webp').default,
     description: (
       <>
         结构紧凑，小小的身体拥有6个舵机，非常适合桌面级使用。
@@ -14,7 +14,7 @@ const FeatureList = [
   },
   {
     title: '开源灵活',
-    imgSrc: require('@site/static/img/electronBot.png').default,
+    imgSrc: require('@site/static/img/electronBot.webp').default,
     description: (
       <>
         作为完全开源项目，electronBot机器人支持自由修改和扩展。你可以添加传感器、
@@ -24,7 +24,7 @@ const FeatureList = [
   },
   {
     title: 'STEM教育工具',
-    imgSrc: require('@site/static/img/electronBot.png').default,
+    imgSrc: require('@site/static/img/electronBot.webp').default,
     description: (
       <>
         electronBot机器人融合了机械、电子、编程和3D打印等多学科知识，

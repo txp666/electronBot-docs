@@ -13,11 +13,11 @@ export const ImgWithBaseUrl = ({src, alt, width}) => (
 ## 焊接辅助工具
 
   <div style={{width: '100%', textAlign: 'center'}}>
-    <ImgWithBaseUrl src="/img/Soldering/9.png" alt="9" />
+    <ImgWithBaseUrl src="/img/Soldering/9.webp" alt="9" />
     <div><em>9</em></div>
   </div>
   <div style={{width: '100%', textAlign: 'center'}}>
-    <ImgWithBaseUrl src="/img/Soldering/10.png" alt="10" />
+    <ImgWithBaseUrl src="/img/Soldering/10.webp" alt="10" />
     <div><em>10</em></div>
   </div>
 
@@ -25,18 +25,18 @@ export const ImgWithBaseUrl = ({src, alt, width}) => (
 
 <div style={{display: 'flex', justifyContent: 'space-between', marginBottom: '20px'}}>
   <div style={{width: '48%', textAlign: 'center'}}>
-    <ImgWithBaseUrl src="/img/Soldering/7.png" alt="7" />
+    <ImgWithBaseUrl src="/img/Soldering/7.webp" alt="7" />
     <div><em>7</em></div>
   </div>
   <div style={{width: '48%', textAlign: 'center'}}>
-    <ImgWithBaseUrl src="/img/Soldering/8.png" alt="8" />
+    <ImgWithBaseUrl src="/img/Soldering/8.webp" alt="8" />
     <div><em>8</em></div>
   </div>
 </div>
 
 - **麦克风**：第 3 引脚 GND 一圈必须焊好，否则发热不稳定，易烧坏。同时不要长时间用风枪吹，先在焊盘上锡，吹化以后迅速放上麦克风,参考手册焊接温度：
   <div style={{width: '100%', textAlign: 'center'}}>
-    <ImgWithBaseUrl src="/img/Soldering/11.png" alt="11" />
+    <ImgWithBaseUrl src="/img/Soldering/11.webp" alt="11" />
     <div><em>11</em></div>
   </div>
 - **功放**：注意方向 +号对应右上角白点
